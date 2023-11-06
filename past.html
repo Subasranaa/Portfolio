@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Research Work - COVID-19 Forecasting</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 18px;
+            text-align: center;
+        }
+        .paper-link {
+            text-align: center;
+            margin: 20px;
+        }
+        .paper-link a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>An Evaluation of Statistical and Neural Models for Multivariate Time-series Forecasting on COVID-19 Dataset</h1>
+    </header>
+    <div class="content">
+        <h2>Background:</h2>
+        <p>
+            The large amount of COVID-19 data that has been collected gives us new opportunities to develop better models of the virus and how it spreads. Many modeling studies have already been done and have taken advantage of the structural characteristics of pandemics, but there is still room for improvement. Choosing early indicators and determining how much data we should look into the past to improve predictions is still unexplored.
+        </p>
+
+        <h2>Solution:</h2>
+        <p>
+            This paper compares different modeling techniques for forecasting daily COVID-19 deaths 1 to 14 days ahead using national-level data. The models take advantage of the structural characteristics of pandemics, such as the fact that hospitalized patients are admitted to the ICU, and ICU patients can be a leading indicator for deaths.
+            We introduce a method to choose the optimal lags for exogenous variables in SARIMAX models by doing a cross-correlation analysis between deaths and the variables. This optimized SARIMAX model showed better performance than other statistical models and the SARIMAX model that uses a common number of lags for all variables.
+        </p>
+
+        <h2>Paper:</h2>
+        <p class="paper-link">
+            I worked as a second author for this paper and implemented the SARIMAX section. We submitted it to the SIAM International Conference on Data Mining.
+            The print of this paper is available at <a href="https://drive.google.com/file/d/1l4FMwIApCK8OhaXuZlyGpg-VvZVBhnwd/view?usp=sharing" target="_blank">SIAM_ACM_2022.pdf</a>.
+        </p>
+    </div>
+</body>
+</html>
