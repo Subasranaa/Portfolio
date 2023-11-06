@@ -43,7 +43,7 @@
         }
     </style>
 </head>
-<body class="container">
+<body>
     <header>
         <h1>Ongoing Research</h1>
     </header>
@@ -54,20 +54,20 @@
         <a href="research.html">Ongoing Research and Future Work</a>
         <a href="advanced.html">Advanced Coursework</a>
     </nav>
-    <div>
+    <div class="container">
         <h2 style="color: darkblue;">Forecasting Pandemics: An in-depth comparison of Machine Learning Models and the CDC’s performance</h2>
         <h2>Background:</h2>
         <p>
             Predictive models are valuable for creating strategies to prevent and control pandemics. They can provide insights into the requirements of the public health system, resource allocation (such as isolation units, ventilators, oxygen supplies, medical staff, medications, and hospital beds), and more. Accurate prediction is also useful for making decisions about the level of precautions needed for a specific area at a given time. The Centers for Disease Control and Prevention (CDC) in the United States collects COVID-19 forecasting models for various variables like cases, deaths, and hospitalizations and presents them to the public and policymakers to enhance decision-making. However, these methods are not uniform and vary in terms of data collection procedures and methods. As a result, each model offers a different set of forecasting dates making direct comparison challenging. Furthermore, there is no widely accepted approach to assess and compare the accuracy of CDC’s death prediction models.
         </p>
     </div>
-    <div>
+    <div class="container">
         <h2>Solution:</h2>
         <p>
             In this research, the primary focus centers on evaluating COVID-19 deaths forecasting models submitted to the CDC. The objective is to identify which of these models provides the most accurate predictions of death counts. To achieve this, an inclusion criteria is defined. Within the dataset, we observed fluctuations in mortality rates, with some instances showcasing a rise in deaths while others indicated a decline. These peaks and troughs are crucial as models tend to underpredict the increasing deaths or overpredict the decreasing deaths. In our analysis, the models were divided into two categories, we selected the Category 1 models that provided forecasts for the peaks and troughs. The remaining models were assigned to Category 2. Next, we evaluate the performance of the models in Category 1 and select the best-performing model, the one with the least sMAPE. We implement several machine-learning models for forecasting COVID-19 deaths and compare them with the CDC’s best-performing model with matching forecasting dates for a fair comparison. We are also the first ones to uniformly evaluate the pandemic forecasting models using two types of pandemic datasets; COVID-19 for predicting both daily and weekly deaths and influenza-like illnesses for weekly predictions.
         </p>
     </div>
-    <div>
+    <div class="container">
         <h1 style="color: darkblue;">Future Work</h1>
         <ol>
             <li>Extend my research on Graph Neural Networks (GNNs) by incorporating a graph structure learning layer. Instead of relying on a predefined graph structure, I aim to develop a GNN that can learn and adapt its underlying graph structure.</li>
