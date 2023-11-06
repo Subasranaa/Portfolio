@@ -55,7 +55,6 @@
             The large amount of COVID-19 data that has been collected gives us new opportunities to develop better models of the virus and how it spreads. Many modeling studies have already been done and have taken advantage of the structural characteristics of pandemics, but there is still room for improvement. Choosing early indicators and determining how much data we should look into the past to improve predictions is still unexplored.
         </p>
     </div>
-    <br>
     <div>
         <h2>Solution:</h2>
         <p>
@@ -63,7 +62,6 @@
             We introduce a method to choose the optimal lags for exogenous variables in SARIMAX models by doing a cross-correlation analysis between deaths and the variables. This optimized SARIMAX model showed better performance than other statistical models and the SARIMAX model that uses a common number of lags for all variables.
         </p>
     </div>
-    <br>
     <div>
         <h2>Paper:</h2>
         <p>
@@ -71,7 +69,7 @@
             The print of this paper is available at <a href="https://www.example.com/path-to-your-pdf-file.pdf" target="_blank">SIAM_ACM_2022.pdf</a>.
         </p>
     </div>
-    <br>
+    <be>
     <div>
         <h1 style="color: darkblue;">2: Exploring the Predictive Power of Correlation and Mutual Information in Attention Temporal Graph Convolutional Network for COVID-19 Forecasting</h1>
         <h2>Background:</h2>
@@ -79,14 +77,12 @@
            In forecasting tasks that involve complex spatial and temporal dependencies, it is crucial to ensure that the model captures these dependencies accurately. Recent studies \cite{kapoor2020examining,mahmud2021human,panagopoulos2021transfer} have developed spatiotemporal Graph Neural Networks (GNNs) that operate on graphs that combine Graph Convolutional Networks (GCNs) to capture spatial dependencies and Recurrent Neural Networks (RNNs) or their variants to model temporal dependencies.  RNNs process sequential data over time, and their hidden states carry the latest information from the past. However, this sequential processing can restrict the model's access to global information present throughout the input sequence. Another crucial aspect of GNN-based models is to accurately capture strong connections between different regions. Many existing GNN-based models~\cite{panagopoulos2021transfer,wang2020using,xue2022multiwave} for epidemic prediction rely on data such as mobility or social connections to establish connections between regions and capture spatial dependencies. However, acquiring and utilizing such data can pose challenges related to data availability/privacy, and accuracy.
         </p>
     </div>
-    <br>
     <div>
         <h2>Solution:</h2>
         <p>
             This study uses an attention-based model from PyTorch Geometric Temporal library (PyGT)~\cite{rozemberczki2021pytorch} where attention allows the model to weigh the significance of different time points and focus on the relevant data, including both adjacent and distant time points that capture the temporal dynamics accurately. For capturing the spatial dependencies, we utilize both Pearson’s correlation and Mutual Information (MI) to capture both linear and nonlinear dependencies between the states. Further, a comparison is done between these techniques and the GNNs based on adjacent states to evaluate their performance.
         </p>
     </div>
-    <br>
     <div>
         <h2>Paper:</h2>
         <p>
