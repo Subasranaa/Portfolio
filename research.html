@@ -22,6 +22,15 @@
         p {
             font-size: 18px;
         }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            text-decoration: none;
+            margin: 0 20px;
+            color: #333;
+        }
         .container {
             margin-left: 50px; /* Adjust the left margin as needed */
             margin-right: 50px; /* Adjust the right margin as needed */
@@ -30,7 +39,7 @@
 </head>
 <body class="container">
     <header>
-        <h1>Previous Research Work</h1>
+        <h1>Ongoing Research</h1>
     </header>
     <nav>
         <a href="home.html">About</a>
@@ -40,50 +49,34 @@
         <a href="advanced.html">Advanced Coursework</a>
     </nav>
     <div>
-        <h1>1: An Evaluation of Statistical and Neural Models for Multivariate Time-series Forecasting on COVID-19 Dataset</h1>
+        <h1>Forecasting Pandemics: An in-depth comparison of Machine Learning Models and the CDC’s performance</h1>
         <h2>Background:</h2>
         <p>
-            The large amount of COVID-19 data that has been collected gives us new opportunities to develop better models of the virus and how it spreads. Many modeling studies have already been done and have taken advantage of the structural characteristics of pandemics, but there is still room for improvement. Choosing early indicators and determining how much data we should look into the past to improve predictions is still unexplored.
+            Predictive models are valuable for creating strategies to prevent and control pandemics. They can provide insights into the requirements of the public health system, resource allocation (such as isolation units, ventilators, oxygen supplies, medical staff, medications, and hospital beds), and more. Accurate prediction is also useful for making decisions about the level of precautions needed for a specific area at a given time. The Centers for Disease Control and Prevention (CDC) in the United States collects COVID-19 forecasting models for various variables like cases, deaths, and hospitalizations and presents them to the public and policymakers to enhance decision-making. However, these methods are not uniform and vary in terms of data collection procedures and methods. As a result, each model offers a different set of forecasting dates making direct comparison challenging. Furthermore, there is no widely accepted approach to assess and compare the accuracy of CDC’s death prediction models.
         </p>
     </div>
     <br>
     <div>
         <h2>Solution:</h2>
         <p>
-            This paper compares different modeling techniques for forecasting daily COVID-19 deaths 1 to 14 days ahead using national-level data. The models take advantage of the structural characteristics of pandemics, such as the fact that hospitalized patients are admitted to the ICU, and ICU patients can be a leading indicator for deaths.
-            We introduce a method to choose the optimal lags for exogenous variables in SARIMAX models by doing a cross-correlation analysis between deaths and the variables. This optimized SARIMAX model showed better performance than other statistical models and the SARIMAX model that uses a common number of lags for all variables.
+            In this research, the primary focus centers on evaluating COVID-19 deaths forecasting models submitted to the CDC. The objective is to identify which of these models provides the most accurate predictions of death counts. To achieve this, an inclusion criteria is defined. Within the dataset, we observed fluctuations in mortality rates, with some instances showcasing a rise in deaths while others indicated a decline. These peaks and troughs are crucial as models tend to underpredict the increasing deaths or overpredict the decreasing deaths. In our analysis, the models were divided into two categories, we selected the Category 1 models that provided forecasts for the peaks and troughs. The remaining models were assigned to Category 2. Next, we evaluate the performance of the models in Category 1 and select the best-performing model, the one with the least sMAPE. We implement several machine-learning models for forecasting COVID-19 deaths and compare them with the CDC’s best-performing model with matching forecasting dates for a fair comparison. We are also the first ones to uniformly evaluate the pandemic forecasting models using two types of pandemic datasets; COVID-19 for predicting both daily and weekly deaths and influenza-like illnesses for weekly predictions.
         </p>
     </div>
     <br>
     <div>
-        <h2>Paper:</h2>
+        <h1>Future Work</h1>
         <p>
-            I worked as a second author for this paper and implemented the SARIMAX section. We submitted it to the SIAM International Conference on Data Mining.
-            The print of this paper is available at <a href="https://www.example.com/path-to-your-pdf-file.pdf" target="_blank">SIAM_ACM_2022.pdf</a>.
-        </p>
-    </div>
-    <br>
-    <div>
-        <h1>2: Exploring the Predictive Power of Correlation and Mutual Information in Attention Temporal Graph Convolutional Network for COVID-19 Forecasting</h1>
-        <h2>Background:</h2>
-        <p>
-           In forecasting tasks that involve complex spatial and temporal dependencies, it is crucial to ensure that the model captures these dependencies accurately. Recent studies \cite{kapoor2020examining,mahmud2021human,panagopoulos2021transfer} have developed spatiotemporal Graph Neural Networks (GNNs) that operate on graphs that combine Graph Convolutional Networks (GCNs) to capture spatial dependencies and Recurrent Neural Networks (RNNs) or their variants to model temporal dependencies.  RNNs process sequential data over time, and their hidden states carry the latest information from the past. However, this sequential processing can restrict the model's access to global information present throughout the input sequence. Another crucial aspect of GNN-based models is to accurately capture strong connections between different regions. Many existing GNN-based models~\cite{panagopoulos2021transfer,wang2020using,xue2022multiwave} for epidemic prediction rely on data such as mobility or social connections to establish connections between regions and capture spatial dependencies. However, acquiring and utilizing such data can pose challenges related to data availability/privacy, and accuracy.
+            Predictive models are valuable for creating strategies to prevent and control pandemics. They can provide insights into the requirements of the public health system, resource allocation (such as isolation units, ventilators, oxygen supplies, medical staff, medications, and hospital beds), and more. Accurate prediction is also useful for making decisions about the level of precautions needed for a specific area at a given time. The Centers for Disease Control and Prevention (CDC) in the United States collects COVID-19 forecasting models for various variables like cases, deaths, and hospitalizations and presents them to the public and policymakers to enhance decision-making. However, these methods are not uniform and vary in terms of data collection procedures and methods. As a result, each model offers a different set of forecasting dates making direct comparison challenging. Furthermore, there is no widely accepted approach to assess and compare the accuracy of CDC’s death prediction models.
         </p>
     </div>
     <br>
     <div>
         <h2>Solution:</h2>
         <p>
-            This study uses an attention-based model from PyTorch Geometric Temporal library (PyGT)~\cite{rozemberczki2021pytorch} where attention allows the model to weigh the significance of different time points and focus on the relevant data, including both adjacent and distant time points that capture the temporal dynamics accurately. For capturing the spatial dependencies, we utilize both Pearson’s correlation and Mutual Information (MI) to capture both linear and nonlinear dependencies between the states. Further, a comparison is done between these techniques and the GNNs based on adjacent states to evaluate their performance.
+            I intend to further advance my research on Graph Neural Networks (GNNs) by incorporating a graph structure learning layer. Instead of relying on a predefined graph structure, I aim to develop a GNN that can learn and adapt its underlying graph structure.
+            Furthermore, I also plan to develop a GNN for national-level data where variables are dependent on each other. For instance, variables like deaths are closely tied to ICU or hospitalized patients.
         </p>
     </div>
-    <br>
-    <div>
-        <h2>Paper:</h2>
-        <p>
-            Published a paper “Exploring the Predictive Power of Correlation and Mutual Information in Attention Temporal Graph Convolutional Network for COVID-19 Forecasting” in the International Conference on Big Data (BigData 2023) by Services Conference Federation (SCF). The print of this paper is available at https://link.springer.com/chapter/10.1007/978-3-031-44725-9_2. 
-            In case you can’t access it, here is the pdf version. <a href="https://drive.google.com/file/d/1Xm4f0R3GTEmbQT-YgPpsjOuWGzHUhc0b/view?usp=sharing" target="_blank">BigData2023.pdf</a>.
-        </p>
-    </div>
+   
 </body>
 </html>
