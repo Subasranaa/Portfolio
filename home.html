@@ -5,56 +5,68 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
+            background-color: #787878;
         }
-        header {
-            background-color: #333;
-            color: #fff;
+        .header {
             text-align: center;
             padding: 20px;
         }
-        h1 {
+        .header h1 {
             font-size: 36px;
+            margin: 1;
+            color: #fff;
         }
-        p {
+        .header p {
             font-size: 18px;
-            text-align: center;
+            margin: 1;
+            color: #fff;
+        
         }
-        nav {
-            text-align: center;
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        .research-objective {
             margin-top: 20px;
         }
-        nav a {
-            text-decoration: none;
-            margin: 0 20px;
-            color: #333;
+        .buttons {
+            margin-top: 20px;
+            text-align: center;
         }
-        .container {
-            margin-left: 50px; /* Adjust the left margin as needed */
-            margin-right: 50px; /* Adjust the right margin as needed */
+        .buttons a {
+            display: block; /* Display as blocks */
+            margin: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background-color: #3c3c3c;
+            color: #fff;
+            border-radius: 5px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <header>
+    <div class="header">
         <h1>Subas Rana</h1>
         <p>Ph.D. in Computer Science</p>
         <p>Graduate Research Assistant</p>
         <p>The University of Georgia</p>
-    </header>
-    <nav>
-        <a href="home.html">About</a>
-        <a href="past.html">Previous Research Work</a>
-        <a href="accomplishments.html">Publications</a>
-        <a href="research.html">Ongoing Research and Future Work</a>
-        <a href="advanced.html">Advanced Coursework</a>
-    </nav>
-    <br>
-     <div class="container">
-        <h1>Research Objective:</h1>
-        <p>Accurately forecasting the pandemic spread is crucial for implementing effective measures to control its transmission and minimize its impact. My research focuses on multivariate time-series forecasting using machine learning and statistical techniques on the pandemic dataset, with a primary focus on predicting COVID-19 mortality rates within the United States at both national and state levels.</p>   
+    </div>
+    <div class="main-content">
+        <h2>Research Objective</h2>
+        <p class="research-objective">
+            Accurately forecasting the pandemic spread is crucial for implementing effective measures to control its transmission and minimize its impact. My research focuses on multivariate time-series forecasting using machine learning and statistical techniques on the pandemic dataset, with a primary focus on predicting COVID-19 mortality rates within the United States at both national and state levels.
+        </p>
+        <div class="buttons">
+            <a href="home.html">About</a>
+            <a href="past.html">Previous Research Work</a>
+            <a href="research.html">Ongoing Research and Future Work</a>
+            <a href="accomplishments.html">Publications</a>
+            <a href="advanced.html">Advanced Coursework</a>
+        </div>
     </div>
 </body>
 </html>
