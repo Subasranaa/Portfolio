@@ -18,14 +18,14 @@
 
         @font-face {
             font-family: 'OceanwideBold';
-            src: url('OceanwideStd Bold.otf') format('opentype');
+            src: url('OceanwideStd-Bold.otf') format('opentype');
             font-weight: bold;
             font-style: normal;
         }
 
         @font-face {
             font-family: 'OceanwideLight';
-            src: url('OceanwideStd Light.otf') format('opentype');
+            src: url('OceanwideStd-Light.otf') format('opentype');
             font-weight: normal;
             font-style: normal;
         }
@@ -46,7 +46,9 @@
         }
 
         .nav-links {
-            display: none; /* Hide nav links by default for mobile */
+            list-style: none;
+            display: flex;
+            gap: 20px;
         }
 
         .nav-links a {
@@ -92,20 +94,39 @@
             background-color: rgba(255, 255, 255, 0.1);
         }
 
-        /* Button to toggle drawer */
+        /* Drawer toggle button */
         .drawer-toggle-button {
-            display: block;
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            width: 40px;
-            height: 40px;
-            background: url('button.png') no-repeat center center;
-            background-size: contain;
-            cursor: pointer;
-            z-index: 1100; /* Ensure it's above drawer */
+            display: none; /* Hide drawer toggle button by default */
         }
-        
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                justify-content: flex-start; /* Adjust alignment for mobile */
+            }
+
+            .logo {
+                height: 40px;
+            }
+
+            .nav-links {
+                display: none; /* Hide regular nav links for mobile */
+            }
+
+            .drawer-toggle-button {
+                display: block; /* Show drawer toggle button for mobile */
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
+                background: url('button.png') no-repeat center center;
+                background-size: contain;
+                cursor: pointer;
+                z-index: 1100; /* Ensure it's above drawer */
+            }
+        }
+
         /* Hero and other sections styles (unchanged for this purpose) */
         .hero {
             display: flex;
@@ -191,63 +212,17 @@
             line-height: 1.6;
             font-family: 'OceanwideLight';
         }
-
-        /* Media Queries for Responsive Design */
-        @media (max-width: 768px) {
-            .navbar {
-                justify-content: flex-start; /* Adjust alignment for mobile */
-            }
-
-            .logo {
-                height: 40px;
-            }
-
-            .nav-links {
-                display: none; /* Hide regular nav links for mobile */
-            }
-
-            .drawer-toggle-button {
-                display: block; /* Show drawer toggle button for mobile */
-            }
-
-            /* Hero and other sections styles (unchanged for this purpose) */
-            .hero {
-                padding: 50px;
-            }
-
-            h1 {
-                font-size: 40px;
-            }
-
-            h2 {
-                font-size: 25px;
-            }
-
-            .research-section,
-            .get-in-touch {
-                padding: 50px;
-            }
-
-            .research-section h1,
-            .get-in-touch h1 {
-                font-size: 30px;
-            }
-
-            .research-section p,
-            .get-in-touch p {
-                font-size: 18px;
-            }
-
-            .button-container .button {
-                font-size: 18px;
-                padding: 10px 16px;
-            }
-        }
     </style>
 </head>
 <body>
     <nav class="navbar">
         <img src="SR.png" alt="Logo" class="logo">
+        <ul class="nav-links">
+            <li><a href="#previous-research">Previous Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#ongoing-future-work">Ongoing & Future Research</a></li>
+            <li><a href="#advanced-coursework">Advanced Coursework</a></li>
+        </ul>
         <!-- Drawer toggle button -->
         <div class="drawer-toggle-button" onclick="toggleDrawer()"></div>
         <!-- Drawer content -->
