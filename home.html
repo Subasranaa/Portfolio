@@ -61,7 +61,7 @@
             background-size: cover;
             background-position: center;
             height: calc(100vh - 152px); /* Adjust as needed */
-            padding: 20px 20px 20px 40px;
+            padding: 100px 20px 20px 40px;
             color: white;
         }
 
@@ -130,7 +130,12 @@
             font-size: 25px;
             border-radius: 100px;
             transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transition all relevant properties */
-            font-family: 'OceanwideBold'; /* Ensure OceanwideBold is applied */
+            font-family: 'OceanwideBold', sans-serif; /* Ensure OceanwideBold is applied */
+            
+            /* Center text vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         
         .button-container .button:hover {
@@ -139,9 +144,10 @@
             border-color: white; /* Set the border color on hover */
         }
 
+
         .get-in-touch {
             background-color: white;
-            padding: 40px 140px; /* Adjusted padding */
+            padding: 100px 140px; /* Adjusted padding */
             color: #B90E2F; /* Text color */
         }
 
