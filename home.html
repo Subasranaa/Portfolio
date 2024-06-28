@@ -13,35 +13,34 @@
         }
 
         body {
-            font-family: 'OceanwideLight', sans-serif; /* Fallback font */
+            font-family: 'OceanwideLight'; /* Fallback font */
         }
 
         @font-face {
             font-family: 'OceanwideBold';
-            src: url('OceanwideStd-Bold.otf') format('opentype');
+            src: url('OceanwideStd Bold.otf') format('opentype');
             font-weight: bold;
             font-style: normal;
         }
 
         @font-face {
             font-family: 'OceanwideLight';
-            src: url('OceanwideStd-Light.otf') format('opentype');
+            src: url('OceanwideStd Light.otf') format('opentype');
             font-weight: normal;
             font-style: normal;
         }
 
-        /* Navbar styles */
         .navbar {
             display: flex;
             align-items: center;
             justify-content: space-between;
             background-color: #B90E2F;
-            height: 100px;
+            height: 152px; /* Original height */
             padding: 0 20px;
         }
 
         .logo {
-            height: 50px;
+            height: 70px; /* Original height */
             padding-left: 20px;
         }
 
@@ -54,116 +53,65 @@
         .nav-links a {
             color: white;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 18px; /* Original font size */
         }
 
-        /* Drawer styles */
-        .drawer {
-            position: fixed;
-            top: 0;
-            right: -250px; /* Start off-screen */
-            width: 250px;
-            height: 100%;
-            background-color: #B90E2F;
-            padding-top: 100px; /* Adjust as needed */
-            transition: right 0.3s ease;
-            z-index: 1000; /* Ensure it's above other content */
-        }
-
-        .drawer.open {
-            right: 0; /* Slide drawer in when open */
-        }
-
-        .drawer .nav-links {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .drawer .nav-links a {
-            font-size: 18px;
-            color: white;
-            text-decoration: none;
-            padding: 15px 20px;
-            display: block;
-            transition: background-color 0.3s ease;
-        }
-
-        .drawer .nav-links a:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-
-        /* Drawer toggle button */
-        .drawer-toggle-button {
-            display: none; /* Hide drawer toggle button by default */
-        }
-
-        /* Media Queries for Responsive Design */
-        @media (max-width: 768px) {
-            .navbar {
-                justify-content: flex-start; /* Adjust alignment for mobile */
-            }
-
-            .logo {
-                height: 40px;
-            }
-
-            .nav-links {
-                display: none; /* Hide regular nav links for mobile */
-            }
-
-            .drawer-toggle-button {
-                display: block; /* Show drawer toggle button for mobile */
-                position: fixed;
-                top: 20px;
-                right: 20px;
-                width: 40px;
-                height: 40px;
-                background: url('button.png') no-repeat center center;
-                background-size: contain;
-                cursor: pointer;
-                z-index: 1100; /* Ensure it's above drawer */
-            }
-        }
-
-        /* Hero and other sections styles (unchanged for this purpose) */
         .hero {
             display: flex;
-            background-image: url('Background.png');
+            background-image: url('Background.png'); /* Replace with your background image */
             background-size: cover;
             background-position: center;
-            height: calc(100vh - 100px);
-            padding: 100px;
+            height: calc(100vh - 152px); /* Original height */
+            padding: 100px; /* Original padding */
             color: white;
+        }
+
+        .hero-left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-right img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px; /* Optional styling */
         }
 
         h1 {
-            font-size: 70px;
-            font-family: 'OceanwideBold';
+            font-size: 70px; /* Original font size */
+            font-family: 'OceanwideBold'; /* Use Oceanwide Bold */
         }
 
         h2 {
-            font-size: 40px;
-            font-family: 'OceanwideLight';
+            font-size: 40px; /* Original font size */
+            font-family: 'OceanwideLight'; /* Use Oceanwide Light */
         }
 
         .research-section {
             background-color: #B90E2F;
-            padding: 100px;
+            padding: 100px; /* Original padding */
             color: white;
         }
 
         .research-section h1 {
-            font-size: 50px;
-            font-family: 'OceanwideBold';
+            font-size: 50px; /* Original font size */
+            font-family: 'OceanwideBold'; /* Use Oceanwide Bold */
             margin-bottom: 20px;
         }
 
         .research-section p {
-            font-size: 25px;
+            font-size: 25px; /* Original font size */
             line-height: 1.6;
-            font-family: 'OceanwideLight';
+            font-family: 'OceanwideLight'; /* Use Oceanwide Light */
             margin-bottom: 30px;
         }
 
@@ -176,41 +124,100 @@
         .button-container .button {
             background-color: white;
             color: #B90E2F;
-            padding: 13px 20px;
+            padding: 13px 20px; /* Original padding */
             margin: 10px;
-            border: 1px solid transparent;
+            border: 1px solid transparent; /* Ensure there is a border, initially transparent */
             cursor: pointer;
-            font-size: 25px;
+            font-size: 25px; /* Original font size */
             border-radius: 100px;
             transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
             font-family: 'OceanwideBold', sans-serif;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: center; /* Center text vertically */
         }
         
         .button-container .button:hover {
             background-color: #B90E2F;
             color: white;
-            border-color: white;
+            border-color: white; /* Set the border color on hover */
         }
 
         .get-in-touch {
             background-color: white;
-            padding: 100px;
+            padding: 100px; /* Original padding */
             color: #B90E2F;
         }
 
         .get-in-touch h1 {
-            font-size: 50px;
-            font-family: 'OceanwideBold';
+            font-size: 50px; /* Original font size */
+            font-family: 'OceanwideBold'; /* Use Oceanwide Bold */
             margin-bottom: 20px;
         }
 
         .get-in-touch p {
-            font-size: 25px;
+            font-size: 25px; /* Original font size */
             line-height: 1.6;
-            font-family: 'OceanwideLight';
+            font-family: 'OceanwideLight'; /* Use Oceanwide Light */
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                height: 100px; /* Adjusted height for smaller screens */
+            }
+
+            .logo {
+                height: 50px; /* Adjusted height for smaller screens */
+            }
+
+            .nav-links {
+                gap: 10px; /* Adjusted gap for smaller screens */
+            }
+
+            .nav-links a {
+                font-size: 14px; /* Reduced font size for smaller screens */
+            }
+
+            .hero {
+                height: auto; /* Adjusted height for smaller screens */
+                flex-direction: column; /* Stack items vertically on smaller screens */
+                padding: 50px; /* Adjusted padding for smaller screens */
+                text-align: center; /* Center text on smaller screens */
+            }
+
+            .hero-left, .hero-right {
+                padding: 0; /* Remove padding for smaller screens */
+            }
+
+            h1 {
+                font-size: 40px; /* Reduced font size for smaller screens */
+            }
+
+            h2 {
+                font-size: 25px; /* Reduced font size for smaller screens */
+            }
+
+            .research-section,
+            .get-in-touch {
+                padding: 50px; /* Adjusted padding for smaller screens */
+                text-align: center; /* Center text on smaller screens */
+            }
+
+            .research-section h1,
+            .get-in-touch h1 {
+                font-size: 30px; /* Reduced font size for smaller screens */
+            }
+
+            .research-section p,
+            .get-in-touch p {
+                font-size: 18px; /* Reduced font size for smaller screens */
+            }
+
+            .button-container .button {
+                font-size: 18px; /* Reduced font size for smaller screens */
+                padding: 10px 16px; /* Adjusted padding for smaller screens */
+            }
         }
     </style>
 </head>
@@ -223,17 +230,6 @@
             <li><a href="#ongoing-future-work">Ongoing & Future Research</a></li>
             <li><a href="#advanced-coursework">Advanced Coursework</a></li>
         </ul>
-        <!-- Drawer toggle button -->
-        <div class="drawer-toggle-button" onclick="toggleDrawer()"></div>
-        <!-- Drawer content -->
-        <div class="drawer">
-            <ul class="nav-links">
-                <li><a href="#previous-research">Previous Research</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#ongoing-future-work">Ongoing & Future Research</a></li>
-                <li><a href="#advanced-coursework">Advanced Coursework</a></li>
-            </ul>
-        </div>
     </nav>
     <section class="hero">
         <div class="hero-left">
@@ -265,12 +261,5 @@
         </div>
     </section>
 
-    <!-- JavaScript to toggle drawer -->
-    <script>
-        function toggleDrawer() {
-            var drawer = document.querySelector('.drawer');
-            drawer.classList.toggle('open');
-        }
-    </script>
 </body>
 </html>
