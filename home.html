@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subas Rana - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Oceanwide&display=swap" rel="stylesheet">
     <style>
-        /* Importing Oceanwide font */
-        @import url('https://fonts.googleapis.com/css2?family=Oceanwide&display=swap');
-
         /* Basic reset */
         * {
             margin: 0;
@@ -17,7 +13,21 @@
         }
 
         body {
-            font-family: 'Oceanwide', sans-serif;
+            font-family: sans-serif; /* Fallback font */
+        }
+
+        @font-face {
+            font-family: 'OceanwideBold';
+            src: url('https://github.com/Subasranaa/Portfolio/blob/89f6c67f6ed9878f3cf95555928b007d6a1bc345/OceanwideStd%20Bold.otf') format('opentype');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'OceanwideLight';
+            src: url('https://github.com/Subasranaa/Portfolio/blob/89f6c67f6ed9878f3cf95555928b007d6a1bc345/OceanwideStd%20Light.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
         }
 
         .navbar {
@@ -77,11 +87,12 @@
 
         h1 {
             font-size: 30px;
-            font-weight: bold;
+            font-family: 'OceanwideBold', sans-serif; /* Use Oceanwide Bold */
         }
 
         h2 {
             font-size: 20px;
+            font-family: sans-serif; /* Fallback to sans-serif */
         }
 
         .research-section {
@@ -93,13 +104,14 @@
 
         .research-section h1 {
             font-size: 24px;
-            font-weight: bold;
+            font-family: 'OceanwideBold', sans-serif; /* Use Oceanwide Bold */
             margin-bottom: 20px;
         }
 
         .research-section p {
             font-size: 16px;
             line-height: 1.6;
+            font-family: 'OceanwideLight', sans-serif; /* Use Oceanwide Light */
             margin-bottom: 30px;
         }
 
@@ -135,13 +147,14 @@
 
         .get-in-touch h1 {
             font-size: 24px;
-            font-weight: bold;
+            font-family: 'OceanwideBold', sans-serif; /* Use Oceanwide Bold */
             margin-bottom: 20px;
         }
 
         .get-in-touch p {
             font-size: 16px;
             line-height: 1.6;
+            font-family: 'OceanwideLight', sans-serif; /* Use Oceanwide Light */
         }
     </style>
 </head>
