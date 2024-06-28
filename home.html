@@ -1,71 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subas Rana - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oceanwide&display=swap" rel="stylesheet">
     <style>
+        /* Importing Oceanwide font */
+        @import url('https://fonts.googleapis.com/css2?family=Oceanwide&display=swap');
+
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #787878;
+            font-family: 'Oceanwide', sans-serif;
         }
-        .header {
-            text-align: center;
-            padding: 20px;
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #B90E2F;
+            height: 152px;
+            padding: 0 20px;
         }
-        .header h1 {
-            font-size: 36px;
-            margin: 1;
-            color: #fff;
+
+        .logo {
+            height: 100px; /* Adjust as needed */
         }
-        .header p {
-            font-size: 18px;
-            margin: 1;
-            color: #fff;
-        
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
         }
-        .main-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-        }
-        .research-objective {
-            margin-top: 20px;
-        }
-        .buttons {
-            margin-top: 20px;
-            text-align: center;
-        }
-        .buttons a {
-            display: block; /* Display as blocks */
-            margin: 10px;
-            padding: 10px 20px;
+
+        .nav-links a {
+            color: white;
             text-decoration: none;
-            background-color: #3c3c3c;
-            color: #fff;
-            border-radius: 5px;
-            font-weight: bold;
+            font-size: 18px; /* Adjust as needed */
+        }
+
+        .hero {
+            display: flex;
+            background-image: url('background.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            height: calc(100vh - 152px); /* Adjust as needed */
+            padding: 20px;
+            color: white;
+        }
+
+        .hero-left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-right img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px; /* Optional styling */
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Subas Rana</h1>
-        <p>Ph.D. in Computer Science</p>
-        <p>Graduate Research Assistant</p>
-        <p>The University of Georgia</p>
-    </div>
-    <div class="main-content">
-        <h2>Research Objective</h2>
-        <p class="research-objective">
-            Accurately forecasting the pandemic spread is crucial for implementing effective measures to control its transmission and minimize its impact. My research focuses on Spatiotemporal Forecasting using Deep Learning on the pandemic dataset, with a primary focus on predicting COVID-19 mortality rates within the United States at both national and state levels.
-        </p>
-        <div class="buttons">
-            <a href="past.html">Previous Research Work</a>
-            <a href="research.html">Ongoing Research and Future Work</a>
-            <a href="accomplishments.html">Publications</a>
-            <a href="advanced.html">Advanced Coursework</a>
+    <nav class="navbar">
+        <img src="logo.png" alt="Logo" class="logo">
+        <ul class="nav-links">
+            <li><a href="#previous-research">Previous Research</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#ongoing-future-work">Ongoing & Future Work</a></li>
+            <li><a href="#advanced-coursework">Advanced Coursework</a></li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="hero-left">
+            <h1>Subas Rana</h1>
+            <h2>Ph.D. in Computer Science, Graduate Research Assistant</h2>
         </div>
-    </div>
+        <div class="hero-right">
+            <img src="your-photo.jpg" alt="Subas Rana">
+        </div>
+    </section>
 </body>
 </html>
