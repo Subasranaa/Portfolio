@@ -3,37 +3,70 @@
 <head>
     <title>Publications</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Basic reset */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
+            box-sizing: border-box;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            width: 100%;
+
+        body {
+            font-family: 'OceanwideLight'; /* Fallback font */
         }
-        h1 {
-            font-size: 36px;
+
+        @font-face {
+            font-family: 'OceanwideBold';
+            src: url('OceanwideStd Bold.otf') format('opentype');
+            font-weight: bold;
+            font-style: normal;
         }
-        p {
-            font-size: 18px;
+
+        @font-face {
+            font-family: 'OceanwideLight';
+            src: url('OceanwideStd Light.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
         }
-        nav {
-            text-align: center;
-            margin-top: 20px;
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #B90E2F;
+            height: 152px; /* Original height */
+            padding: 0 20px;
         }
-        nav a {
+
+        .logo {
+            height: 70px; /* Original height */
+            padding-left: 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
             text-decoration: none;
-            margin: 0 20px;
-            color: #333;
+            font-size: 18px; /* Original font size */
         }
+        
         .container {
             margin-left: 50px; /* Adjust the left margin as needed */
             margin-right: 50px; /* Adjust the right margin as needed */
+        }
+
+        h1 {
+            font-size: 70px; /* Original font size */
+            font-family: 'OceanwideBold'; /* Use Oceanwide Bold */
+        }
+
+        h2 {
+            font-size: 40px; /* Original font size */
+            font-family: 'OceanwideLight'; /* Use Oceanwide Light */
         }
     </style>
 </head>
@@ -41,15 +74,17 @@
     <header>
         <h1>Publications</h1>
     </header>
-    <nav>
-        <a href="home.html">About</a>
-        <a href="past.html">Previous Research Work</a>
-        <a href="accomplishments.html">Publications</a>
-        <a href="research.html">Ongoing Research and Future Work</a>
-        <a href="advanced.html">Advanced Coursework</a>
+    <nav class="navbar">
+        <img src="SR.png" alt="Logo" class="logo">
+        <ul class="nav-links">
+            <li><a href="accomplishments.html">Publications</a></li>
+            <li><a href="past.html">Previous Research</a></li>
+            <li><a href="research.html">Ongoing & Future Research</a></li>
+            <li><a href="advanced.html">Advanced Coursework</a></li>
+        </ul>
     </nav>
     <div class="container">
-        <h2 style="color: darkblue;">BigData2023: Exploring the Predictive Power of Correlation and Mutual Information in Attention Temporal Graph Convolutional Network for COVID-19 Forecasting</h2>
+        <h2 style="color: #B90E2F; text-align: center;">BigData2023: Exploring the Predictive Power of Correlation and Mutual Information in Attention Temporal Graph Convolutional Network for COVID-19 Forecasting</h2>
         <iframe src="BigData_2023.pdf" width="100%" height="600"></iframe>
 
     </div>
