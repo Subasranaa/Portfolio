@@ -75,15 +75,74 @@
             border-radius: 10px; /* Optional styling */
         }
 
-        h1{
-            font-size: 30px;
+        h1 {
+            font-size: 70px;
             font-weight: bold;
         }
 
-        h2{
-            font-size: 20px;
+        h2 {
+            font-size: 40px;
         }
-        
+
+        .research-section {
+            background-color: #B90E2F; /* Same as navbar */
+            padding: 40px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .research-section h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .research-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .button-container .button {
+            background-color: white;
+            color: #B90E2F; /* Same as section background */
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            text-transform: uppercase;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container .button:hover {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        .get-in-touch {
+            background-color: white;
+            padding: 40px 20px;
+            text-align: center;
+            color: #B90E2F; /* Text color */
+        }
+
+        .get-in-touch h1 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .get-in-touch p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
@@ -99,11 +158,32 @@
     <section class="hero">
         <div class="hero-left">
             <h1>Subas Rana</h1>
-            <h2>Ph.D. in Computer Science, Graduate Research Assistant</h2>
+            <h2>Ph.D. in Computer Science <br> Graduate Research Assistant</h2>
         </div>
         <div class="hero-right">
-            <img src="/Logo-1.png" alt="University Logo">
+            <img src="Logo-1.png" alt="University Logo">
         </div>
     </section>
+
+    <section class="research-section">
+        <div class="container">
+            <h1>Research Objective</h1>
+            <p>Accurately forecasting the pandemic spread is crucial for implementing effective measures to control its transmission and minimize its impact. My research focuses on Spatiotemporal Forecasting using Deep Learning on the pandemic dataset, with a primary focus on predicting COVID-19 mortality rates within the United States at both national and state levels.</p>
+            <div class="button-container">
+                <button class="button">Previous Research</button>
+                <button class="button">Publications</button>
+                <button class="button">Ongoing & Future Research</button>
+                <button class="button">Advanced Coursework</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="get-in-touch">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>Email: subas.rana@gmail.com</p>
+        </div>
+    </section>
+
 </body>
 </html>
