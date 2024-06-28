@@ -109,47 +109,21 @@
                 padding: 0px 0px 0px 5px;
             }
 
-            .container {
+            .conatiner {
                 padding: 0px 0px 10px 0px;
             }
 
-            .container-2 {
+            .container2 {
                  padding: 0px 0px 0px 0px;
                  color: #FFFFFF;
             }
             
             .nav-links {
-                display: none;
-                flex-direction: column;
-                position: fixed;
-                top: 0;
-                right: -250px;
-                height: 100%;
-                width: 250px;
-                background-color: #B90E2F;
-                transition: right 0.3s ease;
-                padding-top: 100px;
-            }
-
-            .nav-links.open {
-                right: 0;
-            }
-
-            .nav-links li {
-                padding: 10px 20px;
-            }
-
-            .nav-toggle {
-                display: block;
-                font-size: 30px;
-                color: white;
-                cursor: pointer;
+                gap: 10px; /* Adjusted gap for smaller screens */
             }
 
             .nav-links a {
-                font-size: 18px;
-                color: white;
-                text-decoration: none;
+                font-size: 14px; /* Reduced font size for smaller screens */
             }
 
             h1 {
@@ -175,14 +149,16 @@
                 padding: 0px 10px 10px 10px; /* Adjusted padding for smaller screens */
             }
         }
+
     </style>
 </head>
 <body>
+    
+    
     <nav class="navbar">
         <a href="https://subasranaa.github.io/Portfolio/home"> <!-- Replace 'your-link-url.html' with your actual URL -->
             <img src="SR-1.png" alt="Logo" class="logo">
         </a>
-        <div class="nav-toggle">+</div>
         <ul class="nav-links">
             <li><a href="accomplishments.html">Publications</a></li>
             <li><a href="past.html">Previous Research</a></li>
@@ -192,6 +168,7 @@
     </nav>
     <div>
          <h1 style="text-align:center;">Advanced Courses</h1>
+
     </div>
     
    <div class="container">
@@ -205,10 +182,7 @@
       </ol>
     </div>
 
-    <script>
-        document.querySelector('.nav-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('open');
-        });
-    </script>
 </body>
+
+    
 </html>
