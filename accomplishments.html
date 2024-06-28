@@ -87,26 +87,57 @@
 
         /* Media query for mobile devices */
         @media only screen and (max-width: 768px) {
-            .logo {
-                padding-left: 10px;
+            .navbar {
+                flex-direction: column;
+                height: auto; /* Adjust height to fit content */
             }
 
             .nav-links {
                 display: none; /* Hide nav links in mobile view */
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                background-color: #B90E2F; /* Same as navbar background color */
+                width: 100%;
+                padding: 20px 0;
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translateX(100%);
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .nav-links a {
+                color: white;
+                text-decoration: none;
+                font-size: 24px; /* Adjust font size for mobile */
+                padding: 10px;
+            }
+
+            .nav-links.show {
+                transform: translateX(0);
+            }
+
+            .logo {
+                padding-left: 10px; /* Adjust logo padding for mobile */
+            }
+
+            .container {
+                padding: 0 20px; /* Adjust container padding for mobile */
             }
 
             h1 {
-                font-size: 40px;
+                font-size: 40px; /* Adjust font size for mobile */
                 padding: 20px;
             }
 
             h2 {
-                font-size: 25px;
+                font-size: 25px; /* Adjust font size for mobile */
                 padding: 0px 20px;
             }
 
             iframe {
-                padding: 0px 10px 10px;
+                padding: 0px 10px 10px; /* Adjust iframe padding for mobile */
             }
         }
     </style>
