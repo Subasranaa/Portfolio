@@ -39,6 +39,12 @@
         .container {
             padding: 0px 50px 0px 50px;
         }
+
+        .container-2 {
+            padding: 0px 50px 0px 50px;
+            background-color: #B90E2F;
+            color: white;
+        }
         
         .logo {
             height: 70px; /* Original height */
@@ -96,8 +102,12 @@
                 padding: 0px 0px 0px 5px;
             }
 
-            .conatiner{
+            .conatiner {
                 padding: 0px 5px 0px 5px;
+            }
+
+            .container2 {
+                 padding: 0px 5px 0px 5px;
             }
             
             .nav-links {
@@ -171,20 +181,20 @@
     <br>
 
     
-    <div class="container">
+    <div class="container-2">
         <h3>2: Exploring the Predictive Power of Correlation and Mutual Information in Attention Temporal Graph Convolutional Network for COVID-19 Forecasting</h3>
         <h2>Background:</h2>
         <p>
            In forecasting tasks that involve complex spatial and temporal dependencies, it is crucial to ensure that the model captures these dependencies accurately. Recent studies [<a href="https://arxiv.org/abs/2007.03113">1</a>,<a href="https://ieeexplore.ieee.org/abstract/document/9671474">2</a>,<a href="https://ojs.aaai.org/index.php/AAAI/article/view/16616">3</a>] have developed spatiotemporal Graph Neural Networks (GNNs) that operate on graphs that combine Graph Convolutional Networks (GCNs) to capture spatial dependencies and Recurrent Neural Networks (RNNs) or their variants to model temporal dependencies.  RNNs process sequential data over time, and their hidden states carry the latest information from the past. However, this sequential processing can restrict the model's access to relevant information present throughout the input sequence. Another crucial aspect of GNN-based models is to accurately capture strong connections between different regions. Many existing GNN-based models [<a href="https://ojs.aaai.org/index.php/AAAI/article/view/16616">1</a>,<a href="https://dl.acm.org/doi/abs/10.1145/3534678.3539172">2</a>,<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7755147/">3</a>] for epidemic prediction rely on data such as mobility or social connections to establish connections between regions and capture spatial dependencies. However, acquiring and utilizing such data can pose challenges related to data availability/privacy, and accuracy.
         </p>
     </div>
-    <div class="container">
+    <div class="container-2">
         <h2>Solution:</h2>
         <p>
             This study uses an attention-based model from <a href="https://dl.acm.org/doi/abs/10.1145/3459637.3482014">PyTorch Geometric Temporal (PyGT)</a> library where attention allows the model to weigh the significance of different time points and focus on the relevant data, including both adjacent and distant time points that capture the temporal dynamics accurately. For capturing the spatial dependencies, we utilize both Pearson’s correlation and Mutual Information (MI) to capture both linear and nonlinear dependencies between the states. Further, a comparison is done between these techniques and the GNNs based on adjacent states to evaluate their performance.
         </p>
     </div>
-    <div class="container">
+    <div class="container-2">
         <h2>Paper:</h2>
         <p>
             Published a paper “Exploring the Predictive Power of Correlation and Mutual Information in Attention Temporal Graph Convolutional Network for COVID-19 Forecasting” in the International Conference on Big Data (BigData 2023) by Services Conference Federation (SCF). The print of this paper is available at <a href="https://link.springer.com/chapter/10.1007/978-3-031-44725-9_2" target="_blank">Springer</a>. 
