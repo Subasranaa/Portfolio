@@ -97,7 +97,7 @@
 
         .research-section {
             background-color: #B90E2F; /* Same as navbar */
-            padding: 40px 140px; /* Adjusted padding */
+            padding: 100px 140px 100px; /* Adjusted padding */
             color: white;
         }
 
@@ -122,23 +122,21 @@
 
         .button-container .button {
             background-color: white;
-            color: #B90E2F; /* Same as section background */
+            color: #B90E2F; /* Text color */
             padding: 10px 20px;
             margin: 10px;
-            border: none;
+            border: 1px solid transparent; /* Ensure there is a border, initially transparent */
             cursor: pointer;
             font-size: 25px;
             border-radius: 100px;
-            transition: background-color 0.3s ease;
-            font-family: 'OceanwideBold';
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transition all relevant properties */
+            font-family: 'OceanwideBold'; /* Ensure OceanwideBold is applied */
         }
-
+        
         .button-container .button:hover {
             background-color: #B90E2F;
             color: white;
-            border: 1px;
-            border-color: white;
-            font-family: 'OceanwideBold';
+            border-color: white; /* Set the border color on hover */
         }
 
         .get-in-touch {
