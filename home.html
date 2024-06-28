@@ -35,46 +35,49 @@
             align-items: center;
             justify-content: space-between;
             background-color: #B90E2F;
-            height: 100px; /* Adjusted height for mobile */
+            height: 152px; /* Original height */
             padding: 0 20px;
         }
 
         .logo {
-            height: 50px; /* Adjusted height for mobile */
-            padding-left: 20px; /* Adjusted padding */
+            height: 70px; /* Original height */
+            padding-left: 20px;
         }
 
         .nav-links {
             list-style: none;
             display: flex;
-            gap: 10px;
+            gap: 20px;
         }
 
         .nav-links a {
             color: white;
             text-decoration: none;
-            font-size: 14px; /* Reduced font size for mobile */
+            font-size: 18px; /* Original font size */
         }
 
         .hero {
             display: flex;
-            flex-direction: column; /* Stack items vertically on mobile */
-            align-items: center; /* Center items horizontally on mobile */
             background-image: url('Background.png'); /* Replace with your background image */
             background-size: cover;
             background-position: center;
-            padding: 50px 20px; /* Adjusted padding for mobile */
+            height: calc(100vh - 152px); /* Original height */
+            padding: 100px; /* Original padding */
             color: white;
         }
 
         .hero-left {
-            text-align: center; /* Center text on mobile */
-            padding-bottom: 20px; /* Adjusted padding */
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .hero-right {
-            text-align: center; /* Center text on mobile */
-            padding-top: 20px; /* Adjusted padding */
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .hero-right img {
@@ -84,31 +87,31 @@
         }
 
         h1 {
-            font-size: 40px; /* Reduced font size for mobile */
-            font-family: 'OceanwideBold';
+            font-size: 70px; /* Original font size */
+            font-family: 'OceanwideBold'; /* Use Oceanwide Bold */
         }
 
         h2 {
-            font-size: 25px; /* Reduced font size for mobile */
-            font-family: 'OceanwideLight';
+            font-size: 40px; /* Original font size */
+            font-family: 'OceanwideLight'; /* Use Oceanwide Light */
         }
 
         .research-section {
             background-color: #B90E2F;
-            padding: 50px 20px; /* Adjusted padding for mobile */
+            padding: 100px; /* Original padding */
             color: white;
         }
 
         .research-section h1 {
-            font-size: 30px; /* Reduced font size for mobile */
-            font-family: 'OceanwideBold';
+            font-size: 50px; /* Original font size */
+            font-family: 'OceanwideBold'; /* Use Oceanwide Bold */
             margin-bottom: 20px;
         }
 
         .research-section p {
-            font-size: 18px; /* Reduced font size for mobile */
+            font-size: 25px; /* Original font size */
             line-height: 1.6;
-            font-family: 'OceanwideLight';
+            font-family: 'OceanwideLight'; /* Use Oceanwide Light */
             margin-bottom: 30px;
         }
 
@@ -121,14 +124,14 @@
         .button-container .button {
             background-color: white;
             color: #B90E2F;
-            padding: 10px 20px 5px;
+            padding: 13px 20px; /* Original padding */
             margin: 10px;
             border: 1px solid transparent; /* Ensure there is a border, initially transparent */
             cursor: pointer;
-            font-size: 18px; /* Reduced font size for mobile */
+            font-size: 25px; /* Original font size */
             border-radius: 100px;
             transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-            font-family: 'OceanwideBold';
+            font-family: 'OceanwideBold', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center; /* Center text vertically */
@@ -142,70 +145,78 @@
 
         .get-in-touch {
             background-color: white;
-            padding: 50px 20px; /* Adjusted padding for mobile */
+            padding: 100px; /* Original padding */
             color: #B90E2F;
         }
 
         .get-in-touch h1 {
-            font-size: 30px; /* Reduced font size for mobile */
-            font-family: 'OceanwideBold';
+            font-size: 50px; /* Original font size */
+            font-family: 'OceanwideBold'; /* Use Oceanwide Bold */
             margin-bottom: 20px;
         }
 
         .get-in-touch p {
-            font-size: 18px; /* Reduced font size for mobile */
+            font-size: 25px; /* Original font size */
             line-height: 1.6;
-            font-family: 'OceanwideLight';
+            font-family: 'OceanwideLight'; /* Use Oceanwide Light */
         }
 
         /* Media Queries for Responsive Design */
         @media (max-width: 768px) {
             .navbar {
-                height: 80px; /* Adjusted height for smaller screens */
+                height: 100px; /* Adjusted height for smaller screens */
             }
 
             .logo {
-                height: 40px; /* Adjusted height for smaller screens */
+                height: 50px; /* Adjusted height for smaller screens */
             }
 
             .nav-links {
-                gap: 5px; /* Adjusted gap for smaller screens */
+                gap: 10px; /* Adjusted gap for smaller screens */
             }
 
             .nav-links a {
-                font-size: 12px; /* Further reduced font size for smaller screens */
+                font-size: 14px; /* Reduced font size for smaller screens */
             }
 
             .hero {
-                padding: 30px 10px; /* Adjusted padding for smaller screens */
+                height: auto; /* Adjusted height for smaller screens */
+                flex-direction: column; /* Stack items vertically on smaller screens */
+                padding: 50px; /* Adjusted padding for smaller screens */
+                text-align: center; /* Center text on smaller screens */
+            }
+
+            .hero-left, .hero-right {
+                padding: 0; /* Remove padding for smaller screens */
             }
 
             h1 {
-                font-size: 30px; /* Adjusted font size for smaller screens */
+                font-size: 40px; /* Reduced font size for smaller screens */
             }
 
             h2 {
-                font-size: 20px; /* Adjusted font size for smaller screens */
+                font-size: 25px; /* Reduced font size for smaller screens */
             }
 
             .research-section,
             .get-in-touch {
-                padding: 30px 10px; /* Adjusted padding for smaller screens */
+                padding: 50px; /* Adjusted padding for smaller screens */
+                text-align: center; /* Center text on smaller screens */
             }
 
             .research-section h1,
             .get-in-touch h1 {
-                font-size: 24px; /* Adjusted font size for smaller screens */
+                font-size: 30px; /* Reduced font size for smaller screens */
             }
 
             .research-section p,
             .get-in-touch p {
-                font-size: 16px; /* Adjusted font size for smaller screens */
+                font-size: 18px; /* Reduced font size for smaller screens */
             }
 
             .button-container .button {
-                font-size: 16px; /* Adjusted font size for smaller screens */
-                padding: 8px 16px; /* Adjusted padding for smaller screens */
+                font-size: 18px; /* Reduced font size for smaller screens */
+                padding: 10px 16px; /* Adjusted padding for smaller screens */
             }
         }
     </style>
