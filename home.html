@@ -13,19 +13,19 @@
         }
 
         body {
-            font-family: OceanwideLight; /* Fallback font */
+            font-family: 'OceanwideLight', sans-serif; /* Use OceanwideLight with fallback */
         }
 
         @font-face {
             font-family: 'OceanwideBold';
-            src: url('OceanwideStd Bold.otf') format('opentype');
+            src: url('OceanwideStd-Bold.otf') format('opentype');
             font-weight: bold;
             font-style: normal;
         }
 
         @font-face {
             font-family: 'OceanwideLight';
-            src: url('OceanwideStd Light.otf') format('opentype');
+            src: url('OceanwideStd-Light.otf') format('opentype');
             font-weight: normal;
             font-style: normal;
         }
@@ -35,49 +35,46 @@
             align-items: center;
             justify-content: space-between;
             background-color: #B90E2F;
-            height: 152px;
+            height: 100px; /* Reduced height for mobile */
             padding: 0 20px;
         }
 
         .logo {
-            height: 70px; /* Adjust as needed */
-            padding: 0px 0px 0px 100px;
+            height: 50px; /* Adjusted height for mobile */
+            padding-left: 20px; /* Adjusted padding */
         }
 
         .nav-links {
             list-style: none;
             display: flex;
-            gap: 20px;
+            gap: 10px;
         }
 
         .nav-links a {
             color: white;
             text-decoration: none;
-            font-size: 18px; /* Adjust as needed */
+            font-size: 14px; /* Reduced font size for mobile */
         }
 
         .hero {
             display: flex;
+            flex-direction: column; /* Stack items vertically on mobile */
+            align-items: center; /* Center items horizontally on mobile */
             background-image: url('Background.png'); /* Replace with your background image */
             background-size: cover;
             background-position: center;
-            height: calc(100vh - 152px); /* Adjust as needed */
-            padding: 50px 20px 50px 100px;
+            padding: 50px 20px; /* Adjusted padding for mobile */
             color: white;
         }
 
         .hero-left {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            text-align: center; /* Center text on mobile */
+            padding-bottom: 20px; /* Adjusted padding */
         }
 
         .hero-right {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            text-align: center; /* Center text on mobile */
+            padding-top: 20px; /* Adjusted padding */
         }
 
         .hero-right img {
@@ -87,31 +84,34 @@
         }
 
         h1 {
-            font-size: 70px;
-            font-family: 'OceanwideBold'; /* Use Oceanwide Bold */
+            font-size: 40px; /* Reduced font size for mobile */
+            font-family: 'OceanwideBold';
+            text-align: center; /* Center text on mobile */
         }
 
         h2 {
-            font-size: 40px;
+            font-size: 25px; /* Reduced font size for mobile */
             font-family: 'OceanwideLight';
+            text-align: center; /* Center text on mobile */
         }
 
         .research-section {
-            background-color: #B90E2F; /* Same as navbar */
-            padding: 100px 100px 100px 100px; /* Adjusted padding */
+            background-color: #B90E2F;
+            padding: 50px 20px; /* Adjusted padding for mobile */
             color: white;
+            text-align: center; /* Center text on mobile */
         }
 
         .research-section h1 {
-            font-size: 50px;
-            font-family: 'OceanwideBold'; /* Use Oceanwide Bold */
+            font-size: 30px; /* Reduced font size for mobile */
+            font-family: 'OceanwideBold';
             margin-bottom: 20px;
         }
 
         .research-section p {
-            font-size: 25px;
+            font-size: 18px; /* Reduced font size for mobile */
             line-height: 1.6;
-            font-family: 'OceanwideLight'; /* Use Oceanwide Light */
+            font-family: 'OceanwideLight';
             margin-bottom: 30px;
         }
 
@@ -123,45 +123,94 @@
 
         .button-container .button {
             background-color: white;
-            color: #B90E2F; /* Text color */
-            padding: 13px 20px;
+            color: #B90E2F;
+            padding: 10px 20px;
             margin: 10px;
-            border: 1px solid transparent; /* Ensure there is a border, initially transparent */
+            border: 1px solid transparent;
             cursor: pointer;
-            font-size: 25px;
+            font-size: 18px; /* Reduced font size for mobile */
             border-radius: 100px;
-            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Transition all relevant properties */
-            font-family: 'OceanwideBold', sans-serif; /* Ensure OceanwideBold is applied */
-            
-            /* Center text vertically */
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+            font-family: 'OceanwideBold', sans-serif;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: center; /* Center text vertically */
         }
         
         .button-container .button:hover {
             background-color: #B90E2F;
             color: white;
-            border-color: white; /* Set the border color on hover */
+            border-color: white;
         }
-
 
         .get-in-touch {
             background-color: white;
-            padding: 100px 100px 100px 100px; /* Adjusted padding */
-            color: #B90E2F; /* Text color */
+            padding: 50px 20px; /* Adjusted padding for mobile */
+            color: #B90E2F;
+            text-align: center; /* Center text on mobile */
         }
 
         .get-in-touch h1 {
-            font-size: 50px;
-            font-family: 'OceanwideBold'; /* Use Oceanwide Bold */
+            font-size: 30px; /* Reduced font size for mobile */
+            font-family: 'OceanwideBold';
             margin-bottom: 20px;
         }
 
         .get-in-touch p {
-            font-size: 25px;
+            font-size: 18px; /* Reduced font size for mobile */
             line-height: 1.6;
-            font-family: 'OceanwideLight'; /* Use Oceanwide Light */
+            font-family: 'OceanwideLight';
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                height: 80px; /* Adjusted height for smaller screens */
+            }
+
+            .logo {
+                height: 40px; /* Adjusted height for smaller screens */
+            }
+
+            .nav-links {
+                gap: 5px; /* Adjusted gap for smaller screens */
+            }
+
+            .nav-links a {
+                font-size: 12px; /* Further reduced font size for smaller screens */
+            }
+
+            .hero {
+                padding: 30px 10px; /* Adjusted padding for smaller screens */
+            }
+
+            h1 {
+                font-size: 30px; /* Adjusted font size for smaller screens */
+            }
+
+            h2 {
+                font-size: 20px; /* Adjusted font size for smaller screens */
+            }
+
+            .research-section,
+            .get-in-touch {
+                padding: 30px 10px; /* Adjusted padding for smaller screens */
+            }
+
+            .research-section h1,
+            .get-in-touch h1 {
+                font-size: 24px; /* Adjusted font size for smaller screens */
+            }
+
+            .research-section p,
+            .get-in-touch p {
+                font-size: 16px; /* Adjusted font size for smaller screens */
+            }
+
+            .button-container .button {
+                font-size: 16px; /* Adjusted font size for smaller screens */
+                padding: 8px 16px; /* Adjusted padding for smaller screens */
+            }
         }
     </style>
 </head>
@@ -176,7 +225,7 @@
         </ul>
     </nav>
     <section class="hero">
-        <div class="hero-left" style="padding: 0px 0px 0px 50px;">
+        <div class="hero-left">
             <h1>Subas Rana</h1>
             <h2>Ph.D. in Computer Science <br> Graduate Research Assistant</h2>
         </div>
