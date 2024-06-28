@@ -1,61 +1,167 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ongoing Research</title>
+    <title>Ongoing</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        /* Basic reset */
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
+            box-sizing: border-box;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            width: 100%;
+
+        body {
+            font-family: 'OceanwideLight'; /* Fallback font */
         }
-        h1 {
-            font-size: 36px;
+
+        @font-face {
+            font-family: 'OceanwideBold';
+            src: url('OceanwideStd Bold.otf') format('opentype');
+            font-weight: bold;
+            font-style: normal;
         }
-        p {
-            font-size: 18px;
+
+        @font-face {
+            font-family: 'OceanwideLight';
+            src: url('OceanwideStd Light.otf') format('opentype');
+            font-weight: light;
         }
-        ol {
-            font-size: 18px;
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #B90E2F;
+            height: 152px; /* Original height */
+            padding: 0 20px;
         }
-        li {
-            font-size: 18px;
-        }
-        nav {
-            text-align: center;
-            margin-top: 20px;
-        }
-        nav a {
-            text-decoration: none;
-            margin: 0 20px;
-            color: #333;
-        }
+
         .container {
-            margin-left: 50px; /* Adjust the left margin as needed */
-            margin-right: 50px; /* Adjust the right margin as needed */
+            padding: 0px 50px 0px 50px;
         }
+
+        .container-2 {
+            padding: 0px 50px 0px 50px;
+            background-color: #B90E2F;
+            color: #FFFFFF;
+        }
+        
+        .logo {
+            height: 70px; /* Original height */
+            padding-left: 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px; /* Original font size */
+        }
+
+        h1 {
+            font-size: 50px; /* Original font size */
+            font-family: 'OceanwideBold'; /* Use Oceanwide Bold */
+            color: #B90E2F; /* Original color */
+            padding: 25px; /* Original padding */
+        }
+
+        h2 {
+            font-size: 30px; /* Original font size */
+            font-family: 'OceanwideBold'; /* Use Oceanwide Bold */
+            color: #B90E2F; /* Original color */
+            padding: 25px 0px 15px 0px;
+        }
+
+        h3 {
+            font-size: 35px; /* Original font size */
+            font-family: 'OceanwideBold'; /* Use Oceanwide Bold */
+            color: #B90E2F; /* Original color */
+            padding: 25px 0px 15px 0px;
+        }
+        
+        p {
+            font-size: 25px; /* Original font size */
+            font-family: 'OceanwideLight'; /* Use Oceanwide Light */
+            color: #B90E2F; /* Original color */
+            padding: 25px 0px 15px 0px;
+        }
+
+        /* Media Queries for Responsive Design */
+        @media (max-width: 768px) {
+            .navbar {
+                height: 100px; /* Adjusted height for smaller screens */
+            }
+
+            .logo {
+                height: 25px; /* Adjusted height for smaller screens */
+                padding: 0px 0px 0px 5px;
+            }
+
+            .conatiner {
+                padding: 0px 0px 0px 0px;
+            }
+
+            .container2 {
+                 padding: 0px 0px 0px 0px;
+                 color: #FFFFFF;
+            }
+            
+            .nav-links {
+                gap: 10px; /* Adjusted gap for smaller screens */
+            }
+
+            .nav-links a {
+                font-size: 14px; /* Reduced font size for smaller screens */
+            }
+
+            h1 {
+                font-size: 40px; /* Reduced font size for smaller screens */
+                padding: 15px; /* Adjusted padding for smaller screens */
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+            
+            h3 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 18px; /* Reduced font size for smaller screens */
+                padding: 0px 10px 10px 10px; /* Adjusted padding for smaller screens */
+            }
+        }
+
     </style>
 </head>
 <body>
-    <header>
-        <h1>Ongoing Research</h1>
-    </header>
-    <nav>
-        <a href="home.html">About</a>
-        <a href="past.html">Previous Research Work</a>
-        <a href="accomplishments.html">Publications</a>
-        <a href="research.html">Ongoing Research and Future Work</a>
-        <a href="advanced.html">Advanced Coursework</a>
+    
+    
+    <nav class="navbar">
+        <a href="https://subasranaa.github.io/Portfolio/home"> <!-- Replace 'your-link-url.html' with your actual URL -->
+            <img src="SR-1.png" alt="Logo" class="logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="accomplishments.html">Publications</a></li>
+            <li><a href="past.html">Previous Research</a></li>
+            <li><a href="research.html">Ongoing & Future Research</a></li>
+            <li><a href="advanced.html">Advanced Coursework</a></li>
+        </ul>
     </nav>
+    <div>
+         <h1 style="text-align:center;">Previous Research</h1>
+
+    </div>
+
+
     <div class="container">
-        <h2 style="color: darkblue;">Forecasting Pandemics: An in-depth comparison of Machine Learning Models and the CDC’s performance</h2>
+        <h3>Forecasting Pandemics: An in-depth comparison of Machine Learning Models and the CDC’s performance</h3>
         <h2>Background:</h2>
         <p>
             Predictive models are valuable for creating strategies to prevent and control pandemics. They can provide insights into the requirements of the public health system, resource allocation (such as isolation units, ventilators, oxygen supplies, medical staff, medications, and hospital beds), and more. Accurate prediction is also useful for making decisions about the level of precautions needed for a specific area at a given time. The Centers for Disease Control and Prevention (CDC) in the United States collects COVID-19 forecasting models for various variables like cases, deaths, and hospitalizations and presents them to the public and policymakers to enhance decision-making. However, these methods are not uniform and vary in terms of data collection procedures and methods. As a result, each model offers a different set of forecasting dates making direct comparison challenging. Furthermore, there is no widely accepted approach to assess and compare the accuracy of CDC’s death prediction models.
@@ -67,14 +173,17 @@
             In this research, the primary focus centers on evaluating COVID-19 deaths forecasting models submitted to the CDC. The objective is to identify which of these models provides the most accurate predictions of death counts. To achieve this, an inclusion criteria is defined. Within the dataset, we observed fluctuations in mortality rates, with some instances showcasing a rise in deaths while others indicated a decline. These peaks and troughs are crucial as models tend to underpredict the increasing deaths or overpredict the decreasing deaths. In our analysis, the models were divided into two categories, we selected the Category 1 models that provided forecasts for the peaks and troughs. The remaining models were assigned to Category 2. Next, we evaluate the performance of the models in Category 1 and select the best-performing model, the one with the least sMAPE. We implement several machine-learning models for forecasting COVID-19 deaths and compare them with the CDC’s best-performing model with matching forecasting dates for a fair comparison. We also uniformly evaluate the pandemic forecasting models using two types of pandemic datasets; COVID-19 for predicting both daily and weekly deaths and influenza-like illnesses for weekly predictions.
         </p>
     </div>
-    <div class="container">
-        <h1 style="color: darkblue;">Future Work</h1>
+    <div class="container-2">
+        <h2>Future Work</h2>
         <ol>
             <li>Extend my research on Graph Neural Networks (GNNs) by incorporating a graph structure learning layer. Instead of relying on a predefined graph structure, I aim to develop a GNN that can learn and adapt its underlying graph structure.</li>
             <br>
             <li>Develop a GNN for national-level data where variables are dependent on each other. For instance, variables like deaths are closely tied to ICU or hospitalized patients.</li>
         </ol>
-    </div>   
+    </div>
     <br>
+
 </body>
+
+    
 </html>
